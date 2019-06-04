@@ -1,0 +1,34 @@
+#texto{
+  margin: 5%;
+  font-size: 30pt;
+}
+.hide{
+  display: none;
+}
+h1{
+  color :springgreen;
+  width: 30%;
+  margin: 0 auto;
+  /*background: linear-gradient(to bottom, rgba(0,0,0,0.25), 
+  rgba(0,0,0,0.1) );*/
+  text-shadow: 1px 1px 1px palevioletred;
+  font-variant-alternates: styleset(0);
+  font-family: cursive;
+  font-size: 36pt;
+}
+h2{
+  color: red;                      
+  /*background-color: purple;*/   
+  width: 30%;
+  margin: 0 auto;
+  font-size: 30pt;
+
+}
+input{
+ color: palevioletred;
+ margin: 0 auto;
+ background: position 0;
+}
+
+
+

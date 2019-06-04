@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet" />
+    <title>Juego TRIVIA</title>
+</head>
+
+<body background="fondo.jpg">  
+    
+    <div id="primeraPantalla">
+        <section class="texto">
+            <h1>Bienvenidos a Super-TRIVIA</h1>
+            <br>
+            <h2>Dígame usted ¿Cual es tu nombre?</h2>
+            <br>
+            <input type="text" size="15" maxlength="50" id="nombre" style="text-align:center">
+            <button type="button" id ="botonAceptar" class="btn btn-warning">Aceptar</button>
+        </section>
+    </div>
+    
+    <div id="segundaPantalla" class="hide">
+        <section class="texto">
+            <p id="mensaje"></p>
+            <P>Elige una opción para comenzar a jugar</P>
+            <button type="button"  id="btnHistoriaPeru">Historia del Perú</button>
+            <p id="preguntasHP"></p>
+            <br>
+            <button type="button" id="btnQuimica">Química</button>
+            <p id="preguntasQ"></p>
+        </section>
+    </div>
+    
+    <div id="pregunta1" class="hide">
+            <p>¿Quién descubrió la Ciudad Sagrada de Caral?</p>
+            <input type="radio" id="ruth-shady"  name="prt1" value="correcta">
+            <label for="ruth-shady">Ruth Shady</label><br>
+            <input type="radio" id="kosok" name="prt1" value="incorrecto">
+            <label for="kosok">Paul Kosok</label><br>
+            <input type="radio" id="reiche" name="prt1" value="incorrecto">
+            <label for="reiche">Maria Reiche</label><br>
+            <br>
+            <button type="button" id="question-next1">Siguiente</button>
+    </div> 
+    
+    <div id="pregunta2" class="hide">
+            <p>¿Cuándo fue la declaración de la independencia del Perú?</p>
+            <input type="radio" id="july" name="prt2" value="correcta">
+            <label for="july">15 de julio de 1821.</label><br>
+            <input type="radio" id="january" name="prt2" value="incorrecta">
+            <label for="january">18 de enero de 1821.</label><br>
+            <input type="radio" id="july2" name="prt2" value="incorrecta">
+            <label for="july2">28 de julio de 1821.</label><br>
+            <br>
+            <button type="button" id="question-next2">Siguiente</button>
+    </div> 
+    
+    <div id="pregunta3" class="hide">
+            <p>Durante el periodo Prosperidad Falaz el principal producto de exportación fue:</p>
+            <input type="radio" id="product" name="prt3" value="incorrecta">
+            <label for="product">El oro.</label><br>
+            <input type="radio"id="product2" name="prt3" value="correcta">
+            <label for="product2">El Guano.</label><br>
+            <input type="radio" id="product3"  name="prt3" value="incorrecta">
+            <label for="product3">El petróleo.</label><br>
+            <br>
+            <button type="button" id="question-next3">Siguiente</button>
+    </div>
+    
+    <div id="sextaPantalla" class="hide">
+        <section class="texto">
+            <p>JUEGO TERMINADO!!!!!</P>
+            <button type="button" id="verResultados">VER RESULTADOS</button>
+        </section>
+    </div>
+    <div id="septimaPantalla" class="hide">
+        <section class="texto">
+            <p>TUS RESULTADOS SON:</P>
+            <p id="aciertos"></p>
+            <p id="fallas"></p>
+            <utton type="button" id="volverJugar">Volver a Jugar</button>
+        </section>
+    </div>
+    
+    <div id="pregunta1Q" class="hide">
+            <p>¿Cuál es el símbolo químico del azufre?</p>
+            <input type="radio" id="phosphorus" name="preg1" value="incorrecta">
+            <label for="sulfur">P.</label><br>
+            <input type="radio" id="arsenic" name="preg1" value="incorrecta" >
+            <label for="arsenic">As.</label><br>
+            <input type="radio" id="sulfur" name="preg1" value="correcta">
+            <label for="phosphorus">S.</label><br>
+            <button type="button" id="question1-next">Siguiente</button>
+    </div>
+    
+    <div id="pregunta2Q" class="hide">
+            <p>¿Por donde respira una ballena?</p>
+            <input type="radio" id="skin" name="preg2" value="incorrecta">
+            <label for="skin">Por la piel.</label><br>
+            <input type="radio" id="lungs" name="preg2" value="correcta">
+            <label for="lungs">Por los pulmones.</label><br>
+            <input type="radio" id="gill" name="preg2" value="incorrecta">
+            <label for="gill">Por las branquias.</label><br>
+            <button type="button" id="question2-next">Siguiente</button>
+    </div>
+    
+    <div id="pregunta3Q" class="hide">
+            <p>La columna más a la derecha de la tabla periódica esta compuesta por:</p>
+            <input type="radio" id="minerals" name="preg3" value="incorrecta">
+            <label for="minerals">Minerales.</label><br>
+            <input type="radio" id="noble" name="preg3" value="correcta">
+            <label for="noble">Gases nobles.</label><br>
+            <input type="radio" id="halides" name="preg3" value="incorrecta">
+            <label for="halides">Haluros.</label><br>
+            <button type="button" id="question3-next">Siguiente</button>
+    </div>
+
+    <div id="juegoTerminado" class="hide">
+        <section class="texto">
+            <p>JUEGO TERMINADO!!!!!</P>
+            <button type="button" id="verResultadosQ">VER RESULTADOS</button>
+        </section>
+    </div>
+
+    <div id="octavaPantalla" class="hide">
+        <section class="texto">
+            <p>TUS RESULTADOS SON:</P>
+            <p id="aciertosQUIMICA"></p>
+            <p id="fallasQUIMICA"></p>
+            <button type="button" id="volverJugar1">Volver a Jugar</button>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
